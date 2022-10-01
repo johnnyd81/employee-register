@@ -2,9 +2,9 @@ export const getStaticPaths = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
 
-  const paths = data.map((ninja) => {
+  const paths = data.map((employee) => {
     return {
-      params: { id: ninja.id.toString() },
+      params: { id: employee.id.toString() },
     };
   });
 
@@ -20,17 +20,17 @@ export const getStaticProps = async (context) => {
   const data = await res.json();
 
   return {
-    props: { ninja: data },
+    props: { employee: data },
   };
 };
 
-const Details = ({ ninja }) => {
+const Details = ({ employee }) => {
   return (
     <div>
-      <h1>{ninja.name}</h1>
-      <p>{ninja.email}</p>
-      <p>{ninja.website}</p>
-      <p>{ninja.address.city}</p>
+      <h1>{employee.name}</h1>
+      <p>{employee.email}</p>
+      <p>{employee.website}</p>
+      <p>{employee.address.city}</p>
     </div>
   );
 };
