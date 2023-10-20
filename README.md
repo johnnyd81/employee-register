@@ -1,5 +1,5 @@
 ## Overview
-This is a basic next.js app that fetches data from an outside api.
+This is a next.js app that fetches names from an outside api. 
 
 ## Getting Started
 Clone / Download the project folder
