@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "../../styles/Employees.module.css";
 
 export const getStaticProps = async () => {
+  //fetches data from an external api
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
 
