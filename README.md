@@ -1,5 +1,5 @@
 ## Overview
-This is a next.js app that fetches names from an outside api. 
+This app fetches names from an outside api and displays them onscreen. The app was built using a react js framework called next.js. 
 
 ## Getting Started
 Clone / Download the project folder
